@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+          rel="stylesheet"/>
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+    <div class="flex justify-between px-20 bg-white shadow-lg">
+        <div>
+            <a href="#" class="flex items-center py-4 px-2">
+                <img src="https://diabacore.world/images/logo.png" alt="Logo" class="" />
+                <span class="font-semibold text-gray-500 text-lg"
+                    ></span
+                >
+            </a>
+        </div>
+        <div class="flex">
+            <div>
+                <a href="#" class="flex items-center py-4 px-2">
+                    <img src="https://diabacore.world/images/money-back.png" alt="Logo" class="h-16 w-44" />
+                    <span class="font-semibold text-gray-500 text-lg"
+                        ></span
+                    >
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex items-center py-4 px-2">
+                    <img src="https://diabacore.world/images/global_shipping.png" alt="Logo" class="h-16 w-44" />
+                    <span class="font-semibold text-gray-500 text-lg"
+                        ></span
+                    >
+                </a>
+            </div>
+           
+        </div>
+    </div>
+    <nav class="bg-gray-100 shadow-lg pt-5 flex justify-between px-20">
+		<div class="max-w-6xl ">
+			<div class="flex justify-between">
+				<div class="flex space-x-7">
+					<!-- Website Logo -->
+				
+					<!-- Primary Navbar items -->
+					<div class="hidden md:flex items-center space-x-1">
+						<a
+							href=""
+							class="py-4 px-2 text-red-600 border-b-4 border-red-600 font-semibold "
+							>Home</a
+						>
+						<a
+							href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>Services</a
+						>
+						<a
+							href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>About</a
+						>
+						<a
+							href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>Contact Us</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="flex items-end pb-5">
+            <button class="bg-red-600 rounded-md py-1 px-2 text-white hover:bg-red-800 font-semibold">Order Now</button>
+        </div>
+	</nav>
+
+ 
+
+</head>
+
+<div class="bg-white font-sans leading-normal tracking-normal">
+
+<div class="carousel relative shadow-2xl bg-white">
+<div class="carousel-inner relative overflow-hidden w-full">
+  <!--Slide 1-->
+    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+    <div class="carousel-item absolute opacity-0" style="height:100vh;">
+        <img class="h-full " src="https://diabacore.world/uploads/slider/slider1.jpg" alt="" >
+    </div>
+    <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+    <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+    
+    <!--Slide 2-->
+    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+    <div class="carousel-item absolute opacity-0" style="height:100vh;">
+        <img class="h-full " src="https://diabacore.world/uploads/slider/slider2_1.jpg" alt="" >
+    </div>
+    <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+    <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+    
+   
+    <!-- Add additional indicators for each slide-->
+    <ol class="carousel-indicators">
+        <li class="inline-block mr-3">
+            <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+        <li class="inline-block mr-3">
+            <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+    </ol>
+    
+</div>
+</div>
+
+</div>
+<style>
+    .carousel-open:checked + .carousel-item {
+        position: static;
+        opacity: 100;
+    }
+    .carousel-item {
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+    #carousel-1:checked ~ .control-1,
+    #carousel-2:checked ~ .control-2,
+    #carousel-3:checked ~ .control-3 {
+        display: block;
+    }
+    .carousel-indicators {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
+    #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+        color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+    }
+</style>
+
+<div class="pt-10">
+    
+<h1 class="text-3xl  px-20">What Exactly Is<span class="text-red-900"> Diabacore?</span></h1>
+<p class="text-lg px-20 pt-5">Diabacore is a dietary supplement that is designed for people suffering from type 2 diabetes or erratic blood sugar. While there are many ways to go about regulating your blood sugar, Diabacore provides a safe and natural way to do just that.</p>
+<p class="text-lg px-20 pt-4">Diabacore uses a natural formula that addresses the root cause of the problem to promote healthy blood sugar levels in the body.</p>
+
+<h1 class="pt-10 text-3xl  px-20">How Does <span class="text-red-900">Diabacore</span> Works?</h1>
+<p class="text-lg px-20 pt-5">Diabacore is a natural diabetes supplement in the form of easy-to-swallow pills, that addresses the root cause of your high blood sugar by fixing your body’s hormone imbalance.</p>
+<p class="text-lg px-20 pt-5">Diabacore is considered highly effective as the ingredients contained in it work directly on the body to naturally change the way digestive hormones interact with in-su-lin production.</p>
+<p class="text-lg px-20 pt-5">The key to the formula is the unique combination of ingredients in precise measures that supports the body naturally without causing any undesired aftereffects.</p>
+
+<h1 class="pt-10 text-3xl  px-20"><span class="text-red-900">Diabacore</span> Support Side Effects</h1>
+<p class="text-lg px-20 pt-5">Diabacore is an all natural supplement and there have been no reported side effects.</p>
+<p class="text-lg px-20 pt-5">That said, it’s recommended that you should consult with a physician or other medical professional before you start any new diet, supplement or exercise regime.</p>
+
+<h1 class="pt-10 text-3xl  px-20">How Should I Use <span class="text-red-900">Diabacore?</spa></p></h1>
+<p class="text-lg px-20 pt-5">In order to achieve optimal results we recommend you take one capsule after breakfast, lunch or dinner daily, with a big glass of water.</p>
+    <p class="text-lg px-20 pt-5">This will help your body break free from type 2 diabetes and regain control over your blood sugar.</p>
+    <p class="text-lg px-20 pt-5">Note: Don’t exceed the level of dosage by self-medication. Ask the concerned doctor before changing dosage. Pregnant women and Patients with Chronic medical conditions and illnesses should take capsule with doctors’ recommendation.</p>
+</p>
+</div>
+<div class=" pt-5  bg-red-300 m-10">
+    <h2 class="text-center text-2xl m-14">NOW CHOOSE YOUR SAVINGS PACKAGE</h2>
+    <div class="pb-10 flex justify-between px-10">
+        <div class="inline-block  w-96 bg-purple-50">
+            <img src ="6.png">
+            <h2 class="text-center  text-2xl"><span class="text-red-900">6 Bottles of Diabacore™</span></h2>
+            <p class="text-center ">6 Month Best Value Package</p>
+            <h2 class="text-center text-xl "><span class="text-red-900">Save Up To $300</span></h2>
+            <p class="text-center ">6 Bottles</p>
+            <p class="text-center text-xl">Retail Price (USD): $594.00</p>
+            <p class="text-center text-xl">One-time Purchase:</p>
+            <p class="text-center text-xl">$294.00 <span class="text-red-900">(Save $300.00)</span></p>
+            <p class="text-center text-xl">FREE USA Shipping</p>
+            <div class=" pb-8 ml-32 m-5">
+                <button class="bg-red-600  align-middle rounded-md py-3 px-5 text-white hover:bg-red-800 font-semibold">Order Now</button>
+            </div>
+            
+        </div>
+        <div class="inline-block w-96 bg-purple-50">
+            <img src="3_1.png">
+            <h2 class="text-center text-2xl"><span class="text-red-900">3 Bottles of Diabacore™</span></h2>
+            <p class="text-center">3 Month Most Popular Package</p>
+            <h2 class="text-center text-xl"><span class="text-red-900">Save Up To $120</span></h2>
+            <p class="text-center">3 Bottles</p>
+            <p class="text-center text-xl">Retail Price (USD): $297.00</p>
+            <p class="text-center text-xl">One-time Purchase:</p>
+            <p class="text-center text-xl">$177.00  <span class="text-red-900">(Save $120.00)</span></p>
+            <p class="text-center text-xl">FREE USA Shipping</p>
+            <div class=" pb-8 ml-32 m-5">
+                <button class="bg-red-600  align-middle rounded-md py-3 px-5 text-white hover:bg-red-800 font-semibold">Order Now</button>
+            </div>
+            
+        </div>
+        <div class="inline-block w-96 bg-purple-50  ">
+            <img src="1.png">
+            <h2 class="text-center text-2xl"><span class="text-red-900">1 Bottles of Diabacore™</span></h2>
+            <p class="text-center">1 Month Package</p>
+            <h2 class="text-center text-xl"><span class="text-red-900">Save Up To $30</span></h2>
+            <p class="text-center">1 Bottles</p>
+            <p class="text-center text-xl">Retail Price (USD): $99.00</p>
+            <p class="text-center text-xl">One-time Purchase:</p>
+            <p class="text-center text-xl">$69.00   <span class="text-red-900">(Save $30.00)</span></p>
+            <p class="text-center text-xl">Small Shipping Fee</p>
+            <div class=" pb-8 ml-32 m-5">
+                <button class="bg-red-600  align-middle rounded-md py-3 px-5 text-white hover:bg-red-800 font-semibold">Order Now</button>
+            </div>
+
+</div>
+</div>
+</div>
+
+    <div class=" space-x-4 pt-16 m-10">
+        <h2 class="text-center text-2xl m-14">OTHER IMPORTANT PAGES</h2>
+        <div class="flex pt-5 space-x-4 justify-between ">
+            <div>
+                <img src ="Privacy_Policy_1.jpg">
+                <h2 class="text-center pt-4 text-2xl">Privacy Policy</h2>
+                <div class=" pb-8 ml-32 m-5">
+                <button class="bg-red-600   rounded-md py-3 px-5 text-white hover:bg-red-800 font-semibold">READ MORE</button>
+                </div>
+            </div>
+            
+            
+            <div class="">
+                <img src="Terms_Of_Use_1.jpg">
+                <h2 class="text-center pt-4 text-2xl">Terms Of Use</h2>
+                <div class=" pb-8 ml-32 m-5">
+                    <button class="bg-red-600   rounded-md py-3 px-5 text-white hover:bg-red-800 font-semibold">READ MORE</button>
+                </div>
+            </div>
+
+                <div class="">
+                    <img src="order-tracking.jpg">
+                    <h2 class="text-center pt-4 text-2xl">Technical Documentation</h2>
+                    <div class=" pb-8 ml-32 m-5">
+                        <button class="bg-red-600   rounded-md py-3 px-5 text-white hover:bg-red-800 font-semibold">READ MORE</button>
+                    </div>
+                </div>
+                </div>
+
+
+    </div></body>
+    <footer  class="bg-cover bg-gray-700  pt-20" style="background-image: url(floral_pattern.png)">
+        <div class="px-20 pb-10">
+            <div>
+                <p class=" text-center text-white  ">The statements made regarding these products have not been evaluated by the Food and Drug Administration. The efficacy of these products has not been confirmed by FDA-approved research.These products are not intended to diagnose, treat, cure or prevent any disease. All information presented here is not meant as a substitute for or alternative to information from healthcare practitioners.Please consult your healthcare professional about potential interactions or other possible complications before using any product. The Federal Food, Drug, and Cosmetic Act requires this notice.
+                </div>
+                <div class="flex justify-center space-x-5 pt-5 text-white">
+                    <a
+                    href=""
+                    class="text-white font-semibold hover:text-red-900 transition duration-300"
+                    >Home</a>
+                    <a href=""class="text-white font-semibold hover:text-red-900 transition duration-300" >REVIEW</a>
+                    <a href="" class="text-white font-semibold hover:text-red-900 transition duration-300">FAQ</a>
+                    <a href=""class="text-white font-semibold hover:text-red-900 transition duration-300">GUARANTEE </a>
+                    <a href=""class="text-white font-semibold hover:text-red-900 transition duration-300">DISCLAIMER </a>
+                    <a href=""class="text-white font-semibold hover:text-red-900 transition duration-300">CONTACT </a>
+                </div>
+        </div>
+       
+        <div class="flex justify-center space-x-5  text-white bg-black opacity-50 py-5">
+            <p>Copyright 2020 © Diabacore™ Discounts Site | All Rights Reserved</p>
+        </div>
+            
+               
+    </footer>
+
+                
+         
+    
+  
+</html>
